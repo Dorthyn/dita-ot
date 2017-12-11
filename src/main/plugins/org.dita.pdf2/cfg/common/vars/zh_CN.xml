@@ -30,6 +30,9 @@ This file is part of the DITA Open Toolkit project.
 See the accompanying LICENSE file for applicable license.
 -->
 <vars xmlns="http://www.idiominc.com/opentopic/vars">
+    <!-- Product name to be placed inside headers etc. -->
+    <!-- 用中文变量覆盖commonvariables.xml中的公共变量 -->
+    <variable id="Product Name">产品名称</variable>
   <variable id="Preface odd header"><param ref-name="prodname"/> | 序言 | <param ref-name="pagenum"/></variable>
   <variable id="Preface even header"><param ref-name="pagenum"/> | 序言 | <param ref-name="prodname"/></variable>
   <variable id="Table of Contents">内容</variable>
@@ -44,10 +47,10 @@ See the accompanying LICENSE file for applicable license.
   <variable id="Notices title">Notice</variable><!--TODO:Notices title-->
   <variable id="Mini Toc">内容: </variable><!-- TODO: replace translation "Contents" with "Topics"-->
   <variable id="Notice"><!--TODO:Notice--></variable>
-  <variable id="Figure.title">图 <param ref-name="number"/>: <param ref-name="title"/></variable>
-  <variable id="Figure Number">图 <param ref-name="number"/></variable>
-  <variable id="Table.title">表 <param ref-name="number"/>: <param ref-name="title"/></variable>
-  <variable id="Table Number">表 <param ref-name="number"/></variable>
+  <variable id="Figure.title">图<param ref-name="number"/>: <param ref-name="title"/></variable>
+  <variable id="Figure Number">图<param ref-name="number"/></variable>
+  <variable id="Table.title">表<param ref-name="number"/>: <param ref-name="title"/></variable>
+  <variable id="Table Number">表<param ref-name="number"/></variable>
   <variable id="Related Links">相关信息</variable>
   <variable id="Cross-Reference">Cross-Reference to:</variable><!--UNUSED-->
   <variable id="Content-Reference">Unresolved content reference to:</variable><!--UNUSED-->
