@@ -35,4 +35,20 @@ See the accompanying LICENSE file for applicable license.
     xmlns:fo="http://www.w3.org/1999/XSL/Format"
     version="2.0">
 
+<xsl:attribute-set name="odd__footer"> 
+  <xsl:attribute name="text-align-last"> justify</xsl:attribute> 
+  <!-- <xsl:attribute name="font-family">Microsoft YaHei</xsl:attribute> -->
+  <xsl:attribute name="font-size"> 10pt</xsl:attribute> 
+  <xsl:attribute name="font-weight"> regular</xsl:attribute> 
+  <xsl:attribute name="color"> #888</xsl:attribute> 
+  <xsl:attribute name="padding-top"> 3pt</xsl:attribute> 
+  <xsl:attribute name="padding-bottom"> 15pt</xsl:attribute> 
+  <xsl:attribute name="margin-left"> 
+    <xsl:value-of select="$page-margins"/> 
+  </xsl:attribute> 
+  <xsl:attribute name="margin-right"> 
+    <xsl:value-of select="$page-margins"/> 
+  </xsl:attribute> 
+</xsl:attribute-set> 
+	
 </xsl:stylesheet>
