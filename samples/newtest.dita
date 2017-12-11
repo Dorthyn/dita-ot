@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2016, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Inc?>
+<reference id="newtest" xml:lang="en-US">
+<title>PXIe-1095</title><?Pub Caret -2?>
+<shortdesc>This document contains specifications for the PXIe-1095
+chassis.</shortdesc>
+<refbody></refbody>
+<reference id="level1">
+<title>Electrical</title>
+<shortdesc>The following section provides information about the PXIe-1095
+AC input and DC             output.</shortdesc>
+<reference id="level1-1">
+<title>AC Input</title>
+<refbody>
+<table frame="all">
+<tgroup align="center" cols="2"><colspec colname="col1"/><colspec
+colname="col2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1"><parmname>Input                     
+                   rating</parmname><fn>Care must be taken to not
+exceed the                                         current rating
+of the branch circuit providing power to the                     
+                   chassis. For high power configurations with dual
+power                                         supplies, the supplies
+may need to be powered by separate                               
+         branch circuits.</fn></entry>
+<entry colsep="1" rowsep="1">100 to 240 VAC, 50/60 Hz, 15 to 7.5 
+                                   A</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1"><parmname>Operating voltage         
+                               range</parmname><fn>The operating range
+is guaranteed by                                         design.</fn
+></entry>
+<entry colsep="1" rowsep="1">90 to 264 VAC</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1"><parmname>Nominal input             
+                           frequency</parmname></entry>
+<entry colsep="1" rowsep="1">50 Hz/60 Hz</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1"><parmname>Operating frequency       
+                                 range</parmname></entry>
+<entry colsep="1" rowsep="1">47 to 63 Hz</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1"><parmname>Efficiency</parmname></entry>
+<entry colsep="1" rowsep="1">85% typical</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<section>                     <p>                         <note
+type="note"> Connection to the supplemental, rear protective earth
+                            terminal is not required at 50/60 Hz input
+frequencies. The protective                             conductor
+terminal on the rear of the chassis is for future use at         
+                   alternative frequencies.</note>               
+         <note type="caution">Disconnect all power cords to completely
+remove                             power.</note></p>             
+   </section>
+</refbody>
+</reference>
+<reference id="level1-2">
+<title>DC Output</title>
+<shortdesc>DC output characteristics of the PXIe-1095.</shortdesc>
+<refbody>
+<table frame="all" id="table_fpx_2cv_1cb">
+<tgroup align="center" cols="5"><colspec align="center" colname="col1"
+colnum="1" colsep="1" rowsep="1"/><colspec align="center" colname="col2"
+colnum="2" colsep="1" rowsep="1"/><colspec align="center" colname="col3"
+colnum="3"/><colspec align="center" colname="col4" colnum="4"/><colspec
+align="center" colname="col5" colnum="5"/>
+<tbody>
+<row rowsep="1" valign="middle">
+<entry align="center" colsep="1" rowsep="1" valign="middle"><b>Voltage
+Rail</b></entry>
+<entry align="center" colsep="1" rowsep="1"><b>MaximumCurrent,   
+                                     SinglePower Supply</b></entry>
+<entry align="center" colsep="1" rowsep="1"><b>MaximumCurrent,   
+                                     DualPower Supplies</b></entry>
+<entry align="center" colsep="1" rowsep="1"><b>LoadRegulation</b></entry>
+<entry align="center" colsep="1" rowsep="1"><b>Maximum Ripple and
+                                        Noise (20MHz BW)</b></entry>
+</row>
+<row valign="middle">
+<entry align="center" colsep="1" rowsep="1">+5V_AUX</entry>
+<entry align="center" colsep="1" rowsep="1">4.2 A</entry>
+<entry align="center" colsep="1" rowsep="1">4.2 A</entry>
+<entry align="center" colsep="1" rowsep="1">±5%</entry>
+<entry align="center" colsep="1" rowsep="1">50 mVpp</entry>
+</row>
+<row valign="middle">
+<entry align="center" colsep="1" rowsep="1">+12 V</entry>
+<entry align="center" colsep="1" rowsep="1">75 A</entry>
+<entry align="center" colsep="1" rowsep="1">122 A</entry>
+<entry align="center" colsep="1" rowsep="1">±5%</entry>
+<entry align="center" colsep="1" rowsep="1">100 mVpp</entry>
+</row>
+<row valign="middle">
+<entry align="center" colsep="1" rowsep="1">+5 V</entry>
+<entry align="center" colsep="1" rowsep="1">21.5 A</entry>
+<entry align="center" colsep="1" rowsep="1">21.5 A</entry>
+<entry align="center" colsep="1" rowsep="1">±5%</entry>
+<entry align="center" colsep="1" rowsep="1">50 mVpp</entry>
+</row>
+<row valign="middle">
+<entry align="center" colsep="1" rowsep="1">+3.3 V</entry>
+<entry align="center" colsep="1" rowsep="1">60 A</entry>
+<entry align="center" colsep="1" rowsep="1">60 A</entry>
+<entry align="center" colsep="1" rowsep="1">±5%</entry>
+<entry align="center" colsep="1" rowsep="1">50 mVpp</entry>
+</row>
+<row valign="middle">
+<entry align="center" colsep="1" rowsep="1">-12 V</entry>
+<entry align="center" colsep="1" rowsep="1">1.3 A</entry>
+<entry align="center" colsep="1" rowsep="1">1.3 A</entry>
+<entry align="center" colsep="1" rowsep="1">±5%</entry>
+<entry align="center" colsep="1" rowsep="1">50 mVpp</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<section>                     <p>Maximum total available power, PXIe-1095</p
+>                     <table frame="all" id="table_bgt_42v_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1" colsep="1"
+rowsep="1"/><colspec colname="col2" colnum="2" colsep="1" rowsep="1"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Single AC/DC power supply           
+                             (786300-01)</entry>
+<entry colsep="1" rowsep="1">900 W</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Dual AC/DC power supplies</entry>
+<entry colsep="1" rowsep="1">1644 W</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     <p>                         <table
+colsep="1" frame="all" id="table_xh2_yfv_1cb" rowsep="1">
+<title>Backplane Slot Current Capacity</title>
+<tgroup align="center" cols="7"><colspec colname="c1" colnum="1"
+colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/><colspec
+colname="c3" colnum="3" colwidth="1*"/><colspec colname="c4" colnum="4"
+colwidth="1*"/><colspec colname="c5" colnum="5" colwidth="1*"/><colspec
+colname="c6" colnum="6" colwidth="1*"/><colspec colname="c7" colnum="7"
+colwidth="1*"/>
+<thead>
+<row>
+<entry><b>Slot</b></entry>
+<entry><b>+5 V</b></entry>
+<entry><b>V (I/O)</b></entry>
+<entry><b>+3.3V</b></entry>
+<entry><b>+12V</b></entry>
+<entry><b>-12V</b></entry>
+<entry><b>5V<sub>AUX</sub></b></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>System Controller Slot</entry>
+<entry>9A</entry>
+<entry>-</entry>
+<entry>9A</entry>
+<entry>20A</entry>
+<entry>-</entry>
+<entry>2A</entry>
+</row>
+<row>
+<entry>System Timing Slot</entry>
+<entry>-</entry>
+<entry>-</entry>
+<entry>6A</entry>
+<entry>6A</entry>
+<entry>-</entry>
+<entry>1A</entry>
+</row>
+<row>
+<entry>PXI Express Peripheral Slot</entry>
+<entry>-</entry>
+<entry>-</entry>
+<entry>6A</entry>
+<entry>6A</entry>
+<entry>-</entry>
+<entry></entry>
+</row>
+<row>
+<entry>Hybrid Peripheral Slot with PXI-5 Peripheral</entry>
+<entry>-</entry>
+<entry>-</entry>
+<entry>6 A</entry>
+<entry>6 A</entry>
+<entry>-</entry>
+<entry>1A</entry>
+</row>
+<row>
+<entry>Hybrid Peripheral Slot with PXI-1 Peripheral</entry>
+<entry>6A</entry>
+<entry>5A</entry>
+<entry>6A</entry>
+<entry>1A</entry>
+<entry>1A</entry>
+<entry>-</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     </p>                 </section>
+<section>                     <p>                         <note
+type="note">Total System Controller Slot current should not exceed
+40                             A.</note>                         <note
+type="note"> PCI V(I/O) pins in Hybrid Peripheral Slots are connected
+                            to +5 V.</note>                      
+  <note type="note">The maximum power dissipated in a peripheral slot
+should                             not exceed 58 W.</note>       
+                 <note type="note">The maximum power dissipated across
+all slots should not                             exceed 1236 W,taking
+into account 58 W per peripheral slot.</note>                     </p
+>                 </section>
+<section>                     <p>                         <table
+id="table_rnf_x3v_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Over-current protection</entry>
+<entry colsep="1" rowsep="1">All outputs protected from          
+                                  short circuit and overload with
+automatic                                             recovery</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Over-voltage protection</entry>
+<entry colsep="1" rowsep="1">+12 V, +5 V, and +3.3 V clamped     
+                                       at 20 to 30% above nominal
+output voltage</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Power supply MTTR</entry>
+<entry colsep="1" rowsep="1">Replacement in under 1              
+                              minute</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>                 </section>
+</refbody>
+</reference>
+</reference>
+<reference id="leve12">
+<title>Chassis Cooling</title>
+<refbody>
+<table id="table_o1q_rkv_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Module cooling</entry>
+<entry colsep="1" rowsep="1">Forced air circulation (positive    
+                            pressurization) through three 210 CFM
+fans</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Module slot airflow direction</entry>
+<entry colsep="1" rowsep="1">Bottom of module to top of module</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Module intake</entry>
+<entry colsep="1" rowsep="1">Rear of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Module exhaust</entry>
+<entry colsep="1" rowsep="1">Top of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Secondary cooling</entry>
+<entry colsep="1" rowsep="1">Forced air circulation (positive    
+                            pressurization) through one 70 CFM fan</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Side intake</entry>
+<entry colsep="1" rowsep="1">Right side of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Side exhaust</entry>
+<entry colsep="1" rowsep="1">Left side of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Power supply cooling</entry>
+<entry colsep="1" rowsep="1">Forced air circulation through two  
+                              integrated fans</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Power supply intake</entry>
+<entry colsep="1" rowsep="1">Rear of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Power supply exhaust</entry>
+<entry colsep="1" rowsep="1">Top of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Timing and Synchronization upgrade  
+                              intake</entry>
+<entry colsep="1" rowsep="1">Right side of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Timing and Synchronization upgrade  
+                              exhaust</entry>
+<entry colsep="1" rowsep="1">Top of chassis</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Minimum chassis cooling clearances</entry>
+<entry colsep="1" rowsep="1"> </entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Above</entry>
+<entry colsep="1" rowsep="1">44.45 mm (1.75 in.)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Rear</entry>
+<entry colsep="1" rowsep="1">101.60 mm (4.00 in.)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Sides</entry>
+<entry colsep="1" rowsep="1">44.45 mm (1.75 in.)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</refbody>
+</reference>
+<reference id="level3">
+<title>Environmental</title>
+<refbody>
+<section>                 <p>                     <table
+id="table_bsl_xkv_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Maximum altitude</entry>
+<entry colsep="1" rowsep="1">4,600 m (15,000 ft.), 570 mbar (at  
+                                      25 °C ambient, high fan mode)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Pollution Degree</entry>
+<entry colsep="1" rowsep="1">2</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>                 <p>Indoor use only.</p>             </section>
+</refbody>
+<reference id="level3-1">
+<title>Operating Environment</title>
+<refbody>
+<section>                     <p>                         <table
+colsep="1" frame="all" id="table_ngt_plv_1cb" rowsep="1">
+<tgroup align="center" cols="2"><colspec align="center" colname="c1"
+colnum="1" colwidth="1*"/><colspec align="center" colname="c2"
+colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry align="left" valign="middle">Ambient temperature          
+                                  range</entry>
+<entry align="left" valign="middle">0 °C to 55 °C (IEC           
+                                 60068-2-1 and IEC60068-2-2.)<fn> 
+                                               <p>This product meets
+the requirements of the                                          
+        environmental standards for electrical equipment         
+                                         for</p>                 
+                               <p>measurement, control, and laboratory
+use.</p>                                             </fn>Meets MIL-PRF-
+28800F Class 3low temperature limit                              
+              and MIL-PRF-28800FClass 2 high temperature         
+                                   limit.</entry>
+</row>
+<row>
+<entry align="left" valign="middle">Relative humidity            
+                                range</entry>
+<entry align="left" valign="middle">10% to 90%,                  
+                          noncondensing (IEC60068-2-78.)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     </p>                 </section>
+</refbody>
+</reference>
+<reference id="level3-2">
+<title>Storage Environment</title>
+<refbody>
+<section>                     <p>                         <table
+colsep="1" frame="all" id="table_ett_tmv_1cb" rowsep="1">
+<tgroup align="center" cols="2"><colspec colname="c1" colnum="1"
+colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry>Ambient temperature range</entry>
+<entry>–40 °C to 71 °C (IEC-60068-2-1 andIEC-60068-2-2.)         
+                                   Meets MIL-PRF-28800FClass 3 limits.</entry>
+</row>
+<row>
+<entry>Relative humidity range</entry>
+<entry>5% to 95%, noncondensing (IEC-60068-2-78.)</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>                 </section>
+</refbody>
+</reference>
+</reference>
+<reference id="level4">
+<title>Shock and Vibration</title>
+<refbody>
+<section>                 <p>                     <table colsep="1"
+frame="all" id="table_omy_ymv_1cb" rowsep="1">
+<tgroup align="center" cols="2"><colspec colname="c1" colnum="1"
+colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry>Operational shock</entry>
+<entry>30 g peak, half-sine, 11 ms pulse(IEC-60068-2-27.)Meets   
+                                     MIL-PRF-28800FClass 2 limits.</entry>
+</row>
+<row>
+<entry>Operational random vibration</entry>
+<entry>5 to 500 Hz, 0.3 g<sub>rms</sub></entry>
+</row>
+<row>
+<entry>Non-operating vibration</entry>
+<entry>5 to 500 Hz, 2.4 grms (IEC 60068-2-64.)3 Non-operating    
+                                    test profile exceeds the requirementsof
+MIL-PRF-28800F,                                         Class 3.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>             </section>
+</refbody>
+</reference>
+<reference id="level5">
+<title>Acoustic Emissions</title>
+<reference id="level5-1">
+<title>Sound Pressure Level (at Operator Position)</title>
+<shortdesc>(Tested in accordance with ISO 7779. Meets MIL-PRF-28800F
+                requirements.)</shortdesc>
+<refbody>
+<section>                     <p>                         <table
+colsep="1" frame="all" id="table_ayq_tnv_1cb" rowsep="1">
+<tgroup align="center" cols="2"><colspec align="center" colname="c1"
+colnum="1" colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry align="left">38 W Profile</entry>
+<entry> </entry>
+</row>
+<row>
+<entry>Auto fan (up to 30 °C ambient)</entry>
+<entry>37.7 dBA</entry>
+</row>
+<row>
+<entry>High fan</entry>
+<entry>56.6 dBA</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                         <table id="table_xzr_znv_1cb">
+<tgroup align="center" cols="2"><colspec align="left" colname="col1"
+colnum="1"/><colspec align="center" colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry align="left" valign="middle">58 W Profile</entry>
+<entry align="center" valign="middle"> </entry>
+</row>
+<row>
+<entry align="center" valign="middle">Auto fan (up to 30 °C      
+                                      ambient)</entry>
+<entry align="center" valign="middle">52.1 dBA</entry>
+</row>
+<row>
+<entry align="center" valign="middle">High fan</entry>
+<entry align="center" valign="middle">66.2 dBA</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     </p>                 </section>
+</refbody>
+</reference>
+<reference id="level5-2">
+<title>Sound Power Level</title>
+<refbody>
+<section>                     <p>                         <table
+colsep="1" frame="all" id="table_xzr_znv_1cs" rowsep="1">
+<tgroup align="center" cols="2"><colspec align="center" colname="c1"
+colnum="1" colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry align="left">38 W Profile</entry>
+<entry> </entry>
+</row>
+<row>
+<entry>Auto fan (up to 30 °C ambient)</entry>
+<entry>50.1 dBA</entry>
+</row>
+<row>
+<entry>High fan</entry>
+<entry>67.8 dBA</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                         <table colsep="1" frame="all"
+id="table_ayq_tnv_1xb" rowsep="1">
+<tgroup align="center" cols="2"><colspec align="center" colname="c1"
+colnum="1" colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry align="left">58 W Profile</entry>
+<entry> </entry>
+</row>
+<row>
+<entry>Auto fan (up to 30 °C ambient)</entry>
+<entry>63.8 dBA</entry>
+</row>
+<row>
+<entry>High fan</entry>
+<entry>78.0 dBA</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     </p>                 </section>
+<section>                     <note type="note">The protection provided
+by the PXIe-1095 can be impaired if it                         is
+used in a manner not described in this document.</note>          
+      </section>
+</refbody>
+</reference>
+</reference>
+<reference id="level6">
+<title>Safety</title>
+<shortdesc>This product is designed to meet the requirements of the
+following electrical             equipment safety standards for measurement,
+control, and laboratory use:</shortdesc>
+<refbody>
+<section>                 <p>                     <ul
+id="ul_qdx_j1w_1cb">
+<li>IEC 61010-1, EN 61010-1</li>
+<li>UL 61010-1, CSA C22.2 No. 61010-1</li>
+</ul>                 </p>             </section>
+<section>                 <p>                     <note type="note"
+>For UL and other safety certifications, refer to the product    
+                    label or the <i>Online Product Certification</i
+> section.</note>                 </p>             </section>
+</refbody>
+</reference>
+<reference id="level7">
+<title>Electromagnetic Compatibility</title>
+<shortdesc>This product meets the requirements of the following EMC
+standards for electrical             equipment for measurement, control,
+and laboratory use:</shortdesc>
+<refbody>
+<section>                 <p>                     <ul>
+<li>EN 61326-1 (IEC 61326-1): Class A emissions; Basic immunity</li>
+<li>EN 55011 (CISPR 11): Group 1, Class A emissions</li>
+<li>EN 55022 (CISPR 22): Class A emissions</li>
+<li>EN 55024 (CISPR 24): Immunity</li>
+<li>AS/NZS CISPR 11: Group 1, Class A emissions</li>
+<li>AS/NZS CISPR 22: Class A emissions</li>
+<li>FCC 47 CFR Part 15B: Class A emissions</li>
+<li>ICES-001: Class A emissions</li>
+</ul></p>             </section>
+<section>                 <p>                     <note type="note"
+>In the United States (per FCC 47 CFR), Class A equipment is     
+                   intended for use in commercial, light-industrial,
+and heavy-industrial                         locations. In Europe,
+Canada, Australia and New Zealand (per CISPR 11) Class           
+             A equipment is intended for use only in heavy-industrial
+locations.</note>                     <note type="note">Group 1 equipment
+(per CISPR 11) is any industrial,                         scientific,
+or medical equipment that does not intentionally generate radio  
+                      frequency energy for the treatment of material
+or inspection/analysis                         purposes.</note>  
+                  <note type="note">For EMC declarations and certifications,
+and additional                         information, refer to the <i
+>Online Product Certification</i>                         section.</note
+>                 </p>             </section>
+</refbody>
+</reference>
+<reference id="level8">
+<title>CE Compliance</title>
+<shortdesc>This product meets the essential requirements of applicable
+European Directives,             as follows:</shortdesc>
+<refbody>
+<section>                 <p>                     <ul>
+<li>2014/35/EU; Low-Voltage Directive (safety)</li>
+<li>2014/30/EU; Electromagnetic Compatibility Directive (EMC)</li>
+</ul></p>             </section>
+</refbody>
+<reference id="level8-1">
+<title>Online Product Certification</title>
+<shortdesc>Refer to the product Declaration of Conformity (DoC) for
+additional                 regulatory compliance information. To obtain
+product certifications and the DoC for                 this product,
+visit <i>ni.com/certification</i>, search by model number or product
+line, and                 click the appropriate link in the Certification
+column.</shortdesc>
+</reference>
+</reference>
+<reference id="level9">
+<title>Backplane</title>
+<refbody>
+<section>                 <table id="table_glx_zbw_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Size</entry>
+<entry colsep="1" rowsep="1">3U-sized; one system slot (with three
+                                    system expansion slots) and 17
+peripheral slots. Compliant with                                 
+   IEEE 1101.10 mechanical packaging. PXI Express Specification  
+                                  compliant. Accepts both PXI Express
+and CompactPCI (PICMG 2.0 R                                     3.0)
+3U modules.</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Backplane bare-board material</entry>
+<entry colsep="1" rowsep="1">UL 94 V-0 Recognized</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Backplane connectors</entry>
+<entry colsep="1" rowsep="1">Conforms to IEC 917 and IEC 1076-4-101,
+                                    UL 94 V-0 rated</entry>
+</row>
+</tbody>
+</tgroup>
+</table>             </section>
+</refbody>
+<reference id="level9-1">
+<title>System Synchronization Clocks</title>
+<refbody>
+<section>                     <title>10 MHz System Reference Clock:
+PXI_CLK10</title>                     <table id="table_aws_mcw_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Maximum slot-to-slot skew</entry>
+<entry colsep="1" rowsep="1">100 ps</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Accuracy</entry>
+<entry colsep="1" rowsep="1">±25 ppm max (guaranteed over the    
+                                    operating temperature range)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Accuracy with OCXO (Timing and      
+                                  Synchronization option)</entry>
+<entry colsep="1" rowsep="1">±5 ppb max vs temperature           
+                             (guaranteed over the operating temperature
+range), ±50                                         ppb/year aging</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Maximum jitter</entry>
+<entry colsep="1" rowsep="1">5 ps RMS phase-jitter (10 Hz–1 MHz  
+                                      range)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Duty-factor</entry>
+<entry colsep="1" rowsep="1">45% to 55%</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Unloaded signal swing</entry>
+<entry colsep="1" rowsep="1">3.3 V ±0.3 V</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 </section>
+<section id="section_gcp_cdw_1cb">                     <title>100
+MHz System Reference Clock: PXIe_CLK100 and PXIe_SYNC100</title> 
+                   <table colsep="1" frame="all" id="table_swg_ldw_1cb"
+rowsep="1">
+<tgroup align="center" cols="2"><colspec colname="c1" colnum="1"
+colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry>Maximum slot-to-slot skew</entry>
+<entry>100 ps</entry>
+</row>
+<row>
+<entry>Accuracy</entry>
+<entry>±25 ppm max (guaranteed over the operating temperature    
+                                    range)</entry>
+</row>
+<row>
+<entry>Accuracy with OCXO (Timing and Synchronization            
+                            option)</entry>
+<entry>±5 ppb max vs temperature (guaranteed over the operating  
+                                      temperature range), ±50 ppb/year
+aging</entry>
+</row>
+<row>
+<entry>Maximum jitter</entry>
+<entry>3 ps RMS phase-jitter (10 Hz to 12 kHz range), 2 ps RMS   
+                                     phase-jitter (12 kHz to 20 MHz
+range)</entry>
+</row>
+<row>
+<entry>Duty-factor for PXIe_CLK100</entry>
+<entry>45% to 55%</entry>
+</row>
+<row>
+<entry>Absolute differential voltage (When terminated with a 50  
+                                      Ω load to 1.30 V or Thévenin
+equivalent)</entry>
+<entry>400 to 1000 mV</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 </section>
+<section>                     <note type="note">For other specifications,
+refer to the PXI-5 PXI Express                         Hardware Specification</note
+>                 </section>
+<section>                     <title>External 10 MHz Reference Out
+(Timing and Synchronization Option)</title>                     <table
+colsep="1" frame="all" id="table_s23_f2w_1cb" rowsep="1">
+<tgroup align="center" cols="2"><colspec colname="c1" colnum="1"
+colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry>Accuracy</entry>
+<entry>±5 ppb max vs temperature (guaranteed over the operating  
+                                      temperature range), ±50 ppb/year
+aging</entry>
+</row>
+<row>
+<entry>Maximum jitter</entry>
+<entry>5 ps RMS phase-jitter (10 Hz–1 MHz range)</entry>
+</row>
+<row>
+<entry>Output amplitude</entry>
+<entry>1 Vpp ±20% square-wave into 50Ω, 2 Vpp unloaded</entry>
+</row>
+<row>
+<entry>Output impedance</entry>
+<entry>50Ω ±5Ω</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 </section>
+<section>                     <note type="note">For other specifications,
+refer to the <i>PXI-5 PXI Express                             Hardware
+Specification</i></note>                 </section>
+<section id="section_fv2_j2w_1cb">                     <title>External
+Clock Source</title>                     <table colsep="1" frame="all"
+id="table_r3l_k2w_1cb" rowsep="1">
+<tgroup align="center" cols="2"><colspec colname="c1" colnum="1"
+colwidth="1*"/><colspec colname="c2" colnum="2" colwidth="1*"/>
+<tbody>
+<row>
+<entry>Frequency</entry>
+<entry>10 MHz ±25 ppm</entry>
+</row>
+<row>
+<entry>Input amplitude</entry>
+<entry></entry>
+</row>
+<row>
+<entry>External 10 MHz Reference IN (Timing and Synchronization  
+                                      option)</entry>
+<entry>200 mVpp to 5 Vpp square-wave or sine-wave</entry>
+</row>
+<row>
+<entry>System timing slot PXI_CLK10_IN</entry>
+<entry>5 V or 3.3 V TTL signal</entry>
+</row>
+<row>
+<entry>Maximum jitter introduced by backplane</entry>
+<entry>1 ps RMS phase-jitter (10 Hz to 1 MHz range)</entry>
+</row>
+<row>
+<entry>Rear panel SMA input impedance (Timing and                
+                        Synchronization option)</entry>
+<entry>50 Ω ±5 Ω</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 </section>
+<section id="section_gmb_q2w_1cb">                     <title>PXI
+Star Trigger</title>                     <table id="table_fgk_x2w_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Maximum slot-to-slot skew</entry>
+<entry colsep="1" rowsep="1">250 ps</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Backplane characteristic            
+                            impedance</entry>
+<entry colsep="1" rowsep="1">65 Ω ±10%</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     <p>For other specifications, refer to
+the <i>PXI-1 Hardware                         Specification</i>.</p
+>                 </section>
+<section id="section_vjh_1fw_1cb">                     <title>PXI
+Differential Star Triggers</title>                     <p>(PXIe-DSTARA,
+PXIe-DSTARB, PXIe-DSTARC)</p>                     <table
+id="table_xxc_ffw_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Maximum slot-to-slot skew</entry>
+<entry colsep="1" rowsep="1">150 ps</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Maximum differential skew</entry>
+<entry colsep="1" rowsep="1">25 ps</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Backplane differential              
+                          impedance</entry>
+<entry colsep="1" rowsep="1">100 Ω ±10%</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                     <p>For other specifications, the PXIe-1095
+complies with the <i>PXI-5 PXI                             Express
+Hardware Specification</i>.</p>                 </section>
+</refbody>
+</reference>
+</reference>
+<reference id="level10">
+<title>Mechanical</title>
+<refbody>
+<section id="section_nyv_gy1_dcb">                 <table
+id="table_xg2_lfw_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Standard chassis dimensions</entry>
+<entry colsep="1" rowsep="1"> </entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Height</entry>
+<entry colsep="1" rowsep="1">6.97 in. (177.1 mm)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Width</entry>
+<entry colsep="1" rowsep="1">17.54 in. (445.5 mm)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Depth</entry>
+<entry colsep="1" rowsep="1">18.25 in. (463.6 mm)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 <table id="table_i5g_4fw_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Weight</entry>
+<entry colsep="1" rowsep="1"> </entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Single power supply</entry>
+<entry colsep="1" rowsep="1">35.2 lb (16.0 kg)</entry>
+</row>
+<row>
+<entry colsep="1" rowsep="1">Dual power supplies</entry>
+<entry colsep="1" rowsep="1">39.0 lb (17.7 kg)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 <table id="table_ddv_rfw_1cb">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Chassis materials</entry>
+<entry colsep="1" rowsep="1">Sheet Aluminum (5052-H32,           
+                             5754-H22),<p>Extruded Aluminum (6063-T5,
+                                        6060-T6),</p><p>Plate Aluminum
+(6063-T5, 6061-T6),                                         Cold</p
+><p>Rolled Steel, Cold Rolled Stainless                          
+              Steel,</p><p>Sheet Copper (C110), Santoprene,      
+                                  Urethane</p><p>Foam, PC-ABS, Nylon,
+                                        Polycarbonate,</p><p>Polyethylene,
+Polyamide                                     (FR-106)</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 <table frame="all" id="table_j2w_5fw_1cb"
+rowsep="1">
+<tgroup cols="2"><colspec colname="col1" colnum="1"/><colspec
+colname="col2" colnum="2"/>
+<tbody>
+<row>
+<entry colsep="1" rowsep="1">Finish</entry>
+<entry colsep="1" rowsep="1">                                     <p
+>Conductive Clear Iridite on Aluminum,</p>                       
+             <p>Electroplated Nickel on Cold Rolled Steel,</p>   
+                                 <p>Electroplated Zinc on Cold Rolled
+Steel,</p>                                     <p>Electroplated Nickel
+on Copper</p>                                 </entry>
+</row>
+</tbody>
+</tgroup>
+</table>                 <p>The following figures show the PXIe-1095
+chassis dimensions. The holes shown are                     for the
+installation of the optional rack mount kits.</p>                 <fig>
+<title>PXIe-1095 Chassis Dimensions (Front and Side)</title>
+<image align="center" href="../transformation/figure1.png"
+placement="break" scalefit="yes" width="500"></image>
+</fig>                 <fig>
+<title>PXIe-1095 Chassis Dimensions (Front and Side)</title>
+<image align="center" href="../transformation/figure2.png"
+placement="break" scalefit="yes" width="500"></image>
+</fig>             </section>
+</refbody>
+</reference>
+</reference>
