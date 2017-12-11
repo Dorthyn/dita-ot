@@ -42,6 +42,11 @@
      margin-top: .6em;
      margin-bottom: .6em;
  }
+/* Default of italics to set apart figure captions */
+ p {
+     margin-top: .5em;
+     margin-bottom: .5em;
+ }
   .note p {
      margin-top: .5em;
      margin-bottom: .5em;
@@ -193,7 +198,7 @@ li.linklist {
 /* Set heading sizes, getting smaller for deeper nesting */
 .topictitle1 {
   margin-top: 0;
-  margin-bottom: .1em;
+  margin-bottom: 1em;
   font-size: 14pt;
      color: #007af4;
 }
@@ -225,9 +230,9 @@ li.linklist {
 }
 .sectiontitle {
   margin-top: 1em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   color: black;
-  font-size: 1.17em;
+  font-size: 10.5pt;
   font-weight: bold;
   color: #007af4;
 }
@@ -254,7 +259,7 @@ h6.tasklabel {
 .note {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .notetitle {
   font-weight: bold;
@@ -265,7 +270,7 @@ h6.tasklabel {
 .tip {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .tiptitle {
   font-weight: bold;
@@ -273,7 +278,7 @@ h6.tasklabel {
 .fastpath {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .fastpathtitle {
   font-weight: bold;
@@ -281,7 +286,7 @@ h6.tasklabel {
 .important {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .importanttitle {
   font-weight: bold;
@@ -289,7 +294,7 @@ h6.tasklabel {
 .remember {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .remembertitle {
   font-weight: bold;
@@ -297,7 +302,7 @@ h6.tasklabel {
 .restriction {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .restrictiontitle {
   font-weight: bold;
@@ -305,7 +310,7 @@ h6.tasklabel {
 .attention {
   margin-top: 1em;
   margin-bottom: 1em;
-   background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 .attentiontitle {
   font-weight: bold;
@@ -322,7 +327,7 @@ h6.tasklabel {
   font-weight: bold;
 }
 .caution {
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 1em;
   background-color: #ffffcc;
 }
@@ -555,12 +560,15 @@ div.imagejustify {
   border-right: hidden;
   border-bottom: hidden;
 }
-pre.screen {
-  padding: 5px 5px 5px 5px;
-  border: outset;
-  background-color: #CCCCCC;
-  margin-top: 2px;
-  margin-bottom: 2px;
+ pre.screen {
+     margin-top: 2px;
+     margin-bottom: 2px;
+     padding: 1.5px 1.5px 0 1.5px;
+     border: none;
+     background-color: #DDDDDD;
+     white-space: pre;
+ }
+
   white-space: pre;
 }
 span.filepath,
@@ -577,4 +585,19 @@ pre.codeblock {
  .hwcopyright {
      text-align: center;
      font-family: Arial;
+ }
+th {
+    background-color: #cfcfcf;
+    font-weight: bold;
+}
+
+table {
+     margin-top: 8pt;
+     margin-bottom: 12pt;
+     width: 100%;
+}
+
+ table caption {
+     margin-top: 8pt;
+     text-align: left;
  }
