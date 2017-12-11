@@ -1009,7 +1009,7 @@ See the accompanying LICENSE file for applicable license.
                 <xsl:call-template name="getVariable">
                   <xsl:with-param name="id" select="'Table'"/>
                 </xsl:call-template>
-                <xsl:text> </xsl:text>
+                <xsl:text></xsl:text>
                 <xsl:value-of select="$tbl-count-actual"/>
                 <xsl:text>. </xsl:text>
               </xsl:otherwise>
