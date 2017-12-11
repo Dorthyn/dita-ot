@@ -10,6 +10,7 @@ See the accompanying LICENSE file for applicable license.
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot"
+				xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html"
                 xmlns:ditamsg="http://dita-ot.sourceforge.net/ns/200704/ditamsg"
                 exclude-result-prefixes="xs dita-ot dita2html ditamsg">
@@ -2404,7 +2405,7 @@ See the accompanying LICENSE file for applicable license.
            <xsl:call-template name="getVariable">
             <xsl:with-param name="id" select="'Figure'"/>
            </xsl:call-template>
-           <xsl:text> </xsl:text>
+           <xsl:text></xsl:text>
            <xsl:value-of select="$fig-count-actual"/>
            <xsl:text>. </xsl:text>
           </xsl:otherwise>
@@ -2563,6 +2564,11 @@ See the accompanying LICENSE file for applicable license.
   <xsl:value-of select="$newline"/>
   <xsl:call-template name="chapterHead"/>
   <xsl:call-template name="chapterBody"/> 
+  <div class="hrcopyright">
+	<hr size="2"/>
+  </div>	
+  <div class="hwcopyright">世行测控专有和保密信息</div>
+  <div class="hwcopyright">版权所有 &#xA9; 2015 - <xsl:value-of select="fn:year-from-dateTime(xs:dateTime(fn:current-date()))"/> 北京中科世行测控技术有限公司</div>
 </html>
 </xsl:template>
 
