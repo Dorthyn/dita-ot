@@ -34,5 +34,30 @@ See the accompanying LICENSE file for applicable license.
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:fo="http://www.w3.org/1999/XSL/Format"
     version="2.0">
+<xsl:template name="insertBodyOddFooter"> 
+  <fo:static-content flow-name="odd-body-footer"> 
 
+    <fo:block xsl:use-attribute-sets="__body__odd__footer"> 
+      <xsl:call-template name="getVariable"> 
+        <xsl:with-param name="id" select="'Product Name'"/> 
+      </xsl:call-template> 
+      <fo:leader leader-pattern="space"/> 
+      <xsl:call-template name="getVariable"> 
+        <xsl:with-param name="id" select="'Body odd footer'"/> 
+           <xsl:with-param name="params">
+               <heading>
+                   <fo:inline xsl:use-attribute-sets="__body__odd__footer__heading">
+                       <fo:retrieve-marker retrieve-class-name="current-header"/>
+                   </fo:inline>
+               </heading>
+               <pagenum>
+                   <fo:inline xsl:use-attribute-sets="__body__odd__footer__pagenum">
+                       <fo:page-number/>
+                   </fo:inline>
+               </pagenum>
+           </xsl:with-param>
+      </xsl:call-template> 
+    </fo:block> 
+  </fo:static-content> 
+</xsl:template> 
 </xsl:stylesheet>
