@@ -19,8 +19,8 @@ See the accompanying LICENSE file for applicable license.
     may be copied into strings-<locale ISO code>.xml to provide a 
     locale-specific value for the common string.
   -->
-  <str name="Figure">Figure</str>
-  <str name="Table">Table</str>
+  <str name="Figure">Figure </str>
+  <str name="Table">Table </str>
   <str name="Next topic">Next topic</str>
   <str name="Previous topic">Previous topic</str>
   <str name="Parent topic">Parent topic</str>
