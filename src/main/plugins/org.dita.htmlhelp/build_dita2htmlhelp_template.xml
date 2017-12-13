@@ -48,6 +48,10 @@ See the accompanying LICENSE file for applicable license.
       <ditafileset format="image"/>
       <jobmapper type="temp"/>
     </copy>
+    <copy failonerror="false" todir="${dita.output.dir}/images">
+      <fileset dir="${dita.dir}/images">
+      </fileset>
+    </copy>
   </target>
 
   <target name="htmlhelp.topics"
